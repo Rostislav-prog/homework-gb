@@ -1,0 +1,159 @@
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.category_item{
+    background-color: #211616;
+    width: 32%;
+    height: 260px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.category_acc{
+    width: 100%;
+    margin-top: 20px;
+    height: 180px;
+
+}
+
+.category_women{
+    background-image: url(../img/category_women.jpg);
+    background-position: center;
+    background-color: #504543;
+
+}
+
+.category_men{
+    background-image: url(../img/category_men.jpg);
+    background-position: center;
+    background-color: #504543;
+
+}
+
+.category_kids{
+    background-image: url(../img/category_kids.jpg);
+    background-position: center;
+    background-color: #504543;
+
+}
+
+.category_acc{
+    background-image: url(../img/category_acc.jpg);
+    background-position: center;
+    background-color: #504543;
+
+}
+
+.top_categori_text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+.bottom_categori_text{
+    color: $color_pink;
+    font-size: 24px;
+
+}
+
+.category_link{
+    text-decoration: none;
+
+}
+
+@media (max-width: 1150px){
+    .categories{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+}
+
+@media (max-width: 768px){
+    .categories{
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    .category_item{
+        height: 167px;
+
+    }
+
+    .category_acc{
+        height: 116px;
+
+    }
+
+    .category_women{
+        background-image: url(../img/category_women_mini.jpg);
+        background-position: center;
+
+    }
+
+    .category_men{
+        background-image: url(../img/category_men_mini.jpg);
+        background-position: center;
+
+    }
+
+    .category_kids{
+        background-image: url(../img/category_kids_mini.jpg);
+        background-position: center;
+
+    }
+
+    .category_acc{
+        background-image: url(../img/category_acc_mini.jpg);
+        background-position: center;
+
+        }
+}
+
+@media (max-width: 425px){
+    .category_item{
+        width: 100%;
+
+    }
+    .categories{
+        flex-direction: column;
+        margin-top: 34px;
+
+    }
+    .category_women{
+        background-image: url(../img/category_women.jpg);
+        height: 247px;
+
+    }
+    .category_men{
+        background-image: url(../img/category_men.jpg);
+        height: 247px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+    }
+    .category_kids{
+        background-image: url(../img/category_kids.jpg);
+        height: 247px;
+
+    }
+    .category_acc{
+        background-image: url(../img/category_acc.jpg);
+        margin-top: 32px;
+
+    }
+}

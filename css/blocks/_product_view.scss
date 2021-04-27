@@ -1,0 +1,193 @@
+.product_view{
+    background-color: #F7F7F7;
+    min-height: 624px;
+    
+}
+
+.product_view_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 624px;
+
+}
+
+.product_image{
+    overflow: hidden;
+
+}
+
+.transition{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 98vw;
+    height: 100%;
+    z-index: 100;
+    top: 0px;
+
+}
+
+.transition_color{
+    fill: black;
+
+}
+
+.transition_color:hover{
+
+    fill: $color_pink;
+
+}
+
+
+.product_informaion_wrap{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    height: 630px;
+
+}
+
+.product_informaion{
+    width: 100%;
+    background-color: white;
+    border: solid 1px #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1120px;
+    height: 600px;
+    position: absolute;
+    top: -50px;
+    z-index: 200;
+
+    h2{
+        font-weight: 300;
+        font-size: 18px;
+        color: #5E5E5E;
+        
+    }
+
+    p{
+        max-width: 555px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #5E5E5E;
+
+    }
+}
+
+.women_collection{
+    font-weight: 300;
+    font-size: 14px;
+    color: $color_pink;
+
+}
+
+.hr_63{
+    width: 63px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid $color_pink;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+}
+
+.price{
+    font-weight: 300;
+    font-size: 24px;
+    color: $color_pink;
+
+}
+
+.hr_641{
+    width: 100%;
+
+    hr{
+        max-width: 641px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #EAEAEA;
+
+    }
+}
+
+.filter_3{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    li{
+        display: block;
+        margin-right: 22px;
+
+    }
+
+    a{
+        text-decoration: none;
+        color: #6F6E6E;
+        font-size: 14px;
+        font-weight: 400;
+        margin-right: 22px;
+
+    }
+
+    :last-child{
+        margin-right: 0;
+    }
+
+    svg{
+        margin-left: 9px;
+
+    }
+}
+
+.button_to_card{
+    display: flex;
+    align-items: center;
+    padding: 14px 56px 9px 23px;
+    justify-content: space-between;
+    color: $color_pink;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    border: 1px solid #FF6A6A;
+
+    svg{
+        margin-right: 23px;
+        fill: #EF5B70;
+
+    }
+}
+
+.button_to_card:hover{
+    color: #FFFFFF;
+    background-color: $color_pink;
+
+        svg{
+        fill: #FFFFFF;
+
+    }
+}
+
+@media (max-width: 1120px){
+    .product_informaion{
+        top: 0px;
+
+
+    }
+}
+
+@media (max-width: 500px){
+    .filter_3{
+        a{
+            font-size: 10px;
+
+        }
+    }
+}

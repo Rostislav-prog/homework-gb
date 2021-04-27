@@ -1,0 +1,99 @@
+.feedback{
+    background-image: url(../img/feedback_background.png);
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.feedback_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 86px;
+    padding-bottom: 126px;
+
+}
+
+.reviews_text{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    max-width: 359px;
+    margin-top: 40px;
+
+}
+
+.subscribe_heading{
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subscribe_span{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.subscribe-form {
+    display: inline-flex;
+    margin-top: 32px;
+    width: 100%;
+
+}
+
+.subscribe-form-field {
+    padding: 20px;
+    background-color: #E1E1E1;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 49px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.subscribe-form-btn {
+    background-color: $color_pink;
+    color:  #FFFFFF;;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    padding-right: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 49px;
+    width: 85px;
+    box-sizing: border-box;
+
+}
+
+@media (max-width: 768px){
+    .feedback{
+        background-image: url(../img/feedback_background_mini.png);
+
+    }
+    .feedback_wrap{
+        flex-direction: column;
+
+    }
+    .subscribe{
+        margin-top: 88px;
+
+    }
+}
+
+@media (max-width: 768px){
+    .feedback_wrap{
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+}
