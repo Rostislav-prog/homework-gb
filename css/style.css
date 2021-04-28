@@ -145,7 +145,7 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .header__href--none {
+  .header__href_none {
     display: none;
   }
 }
@@ -604,7 +604,7 @@
 
 .subscribe-form-field {
   padding: 20px;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
   border: none;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -618,7 +618,7 @@
 
 .subscribe-form-btn {
   background-color: #F16D7F;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   border: none;
@@ -951,7 +951,7 @@
 }
 
 .product_view {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   min-height: 624px;
 }
 
@@ -990,6 +990,10 @@
   top: 0px;
 }
 
+.transition_button {
+  border: none;
+}
+
 .transition_color {
   fill: black;
 }
@@ -1013,7 +1017,7 @@
 .product_informaion {
   width: 100%;
   background-color: white;
-  border: solid 1px #EAEAEA;
+  border: solid 1px #eaeaea;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1037,14 +1041,14 @@
 .product_informaion h2 {
   font-weight: 300;
   font-size: 18px;
-  color: #5E5E5E;
+  color: #5e5e5e;
 }
 
 .product_informaion p {
   max-width: 555px;
   font-weight: 300;
   font-size: 14px;
-  color: #5E5E5E;
+  color: #5e5e5e;
 }
 
 .women_collection {
@@ -1076,7 +1080,7 @@
   max-width: 641px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
 }
 
 .filter_3 {
@@ -1097,7 +1101,7 @@
 
 .filter_3 a {
   text-decoration: none;
-  color: #6F6E6E;
+  color: #6f6e6e;
   font-size: 14px;
   font-weight: 400;
   margin-right: 22px;
@@ -1125,22 +1129,22 @@
   color: #F16D7F;
   font-size: 16px;
   font-weight: 400;
-  background-color: #FFFFFF;
-  border: 1px solid #FF6A6A;
+  background-color: #ffffff;
+  border: 1px solid #ff6a6a;
 }
 
 .button_to_card svg {
   margin-right: 23px;
-  fill: #EF5B70;
+  fill: #ef5b70;
 }
 
 .button_to_card:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #F16D7F;
 }
 
 .button_to_card:hover svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 @media (max-width: 1120px) {
