@@ -151,7 +151,7 @@
 }
 
 .promo {
-  background-color: #F1E4E6;
+  background-color: #f1e4e6;
 }
 
 .promo_wrap {
@@ -295,7 +295,7 @@
 .top_categori_text {
   font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .bottom_categori_text {
@@ -409,7 +409,7 @@
 .product {
   display: block;
   position: relative;
-  background-color: #F3EDED;
+  background-color: #f3eded;
   min-height: 579px;
   max-width: 359px;
   margin-top: 30px;
@@ -441,7 +441,7 @@
 .product_text {
   font-size: 14px;
   font-weight: 300;
-  color: #5D5D5D;
+  color: #5d5d5d;
   margin-top: 12px;
   margin-left: 18px;
   max-width: 314px;
@@ -459,7 +459,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #F16D7F;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   display: inline-block;
   padding: 15px 39px;
   text-decoration: none;
@@ -468,7 +468,7 @@
 }
 
 .button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #F16D7F;
 }
 
@@ -515,7 +515,7 @@
 }
 
 .advantages_header {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 20px;
   font-weight: 400;
   margin-top: 25px;
@@ -523,7 +523,7 @@
 
 .advantages_text {
   max-width: 360px;
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 17px;
   font-weight: 300;
   margin-top: 16px;
@@ -695,7 +695,7 @@
 }
 
 .footer_content_left {
-  color: #FBFBFB;
+  color: #fbfbfb;
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -874,7 +874,7 @@
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
-  color: #6F6E6E;
+  color: #6f6e6e;
 }
 
 .filter_2 img {
@@ -916,7 +916,7 @@
 }
 
 .pagination_border {
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   padding: 12px;
 }
 
@@ -929,7 +929,8 @@
   opacity: 0.5;
 }
 
-.pagination_border .sec:first-child, .pagination_border a.sec:last-child {
+.pagination_border .sec:first-child,
+.pagination_border a.sec:last-child {
   opacity: 1;
 }
 
