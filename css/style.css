@@ -1203,6 +1203,7 @@
   color: #575757;
   font-size: 22px;
   font-weight: 400;
+  width: 170px;
 }
 
 .cart-main__cart button {
@@ -1212,6 +1213,16 @@
   background-color: #ffffff;
   margin-top: 28px;
   margin-right: 22px;
+}
+
+.cart-main .cart-main__h2-span {
+  margin-left: 20px;
+}
+
+.cart-main .cart-main__h3-span {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #F16D7F;
 }
 
 .cart-main .cart-main__price {
