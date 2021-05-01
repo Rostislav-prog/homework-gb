@@ -1140,7 +1140,8 @@
 .registration-main {
     @include wrap;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 64px;
     padding-bottom: 96px;
 
@@ -1168,16 +1169,13 @@
         border: 1px solid #a4a4a4;
         padding-left: 16px;
         margin-top: 20px;
+        cursor: pointer;
     }
 
     &__form {
         @include placeholder {
             opacity: 0.5;
         }
-    }
-
-    &__form:checked {
-        border: 1px solid $color_pink;
     }
 
     &__radio {
@@ -1194,6 +1192,7 @@
         width: 55px;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
         input {
             display: none;
         }
@@ -1205,7 +1204,7 @@
             border: 1px solid #a4a4a4;
         }
         input:checked + span {
-            background: $color_pink;
+            background-color: $color_pink;
             border: 1px solid $color_pink;
         }
     }
@@ -1219,6 +1218,7 @@
         justify-content: space-between;
         margin-left: 20px;
         align-items: center;
+        cursor: pointer;
         input {
             display: none;
         }
@@ -1236,17 +1236,54 @@
     }
 
     &__button {
+        box-sizing: border-box;
         color: #ffffff;
         font-size: 14px;
         font-weight: 400;
         padding: 16px 30px 17px 29px;
         background-color: $color_pink;
-        border: none;
+        border: 1px solid $color_pink;
+        cursor: pointer;
+        transition-duration: 100ms;
         svg {
             margin-left: 20px;
+            fill: #ffffff;
+        }
+    }
+
+    &__button:hover {
+        color: $color_pink;
+        background-color: #ffffff;
+        svg {
+            fill: $color_pink;
         }
     }
 
     &__loyalty {
+        max-width: 652px;
+        h2 {
+            font-weight: 300;
+            font-size: 24px;
+            color: #000000;
+            margin-bottom: 22px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 24px;
+            color: #000000;
+            margin-bottom: 21px;
+        }
+        ol {
+            font-weight: 300;
+            font-size: 24px;
+            color: #000000;
+            li {
+                display: block;
+                margin-bottom: 16px;
+                svg {
+                    margin-right: 23px;
+                }
+            }
+        }
     }
 }
