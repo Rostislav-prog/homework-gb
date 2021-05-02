@@ -17,3 +17,8 @@
         @content;
     }
 }
+
+@mixin transition-button {
+    transition-duration: 500ms;
+    transition-property: background-color;
+}
