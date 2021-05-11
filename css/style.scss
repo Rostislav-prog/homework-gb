@@ -185,7 +185,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-image: url(../img/promo_wrap_back.png);
+    background-image: url(../img/promo_wrap_back.webp);
+    // background-image: url(../img/promo_wrap_back.png);
     background-repeat: no-repeat;
     background-position-x: -226px;
     background-position-y: 100%;
@@ -238,25 +239,29 @@ body {
 }
 
 .category_women {
-    background-image: url(../img/category_women.jpg);
+    background-image: url(../img/category_women.webp);
+    // background-image: url(../img/category_women.jpg);
     background-position: center;
     background-color: #504543;
 }
 
 .category_men {
-    background-image: url(../img/category_men.jpg);
+    background-image: url(../img/category_men.webp);
+    // background-image: url(../img/category_men.jpg);
     background-position: center;
     background-color: #504543;
 }
 
 .category_kids {
-    background-image: url(../img/category_kids.jpg);
+    background-image: url(../img/category_kids.webp);
+    // background-image: url(../img/category_kids.jpg);
     background-position: center;
     background-color: #504543;
 }
 
 .category_acc {
-    background-image: url(../img/category_acc.jpg);
+    background-image: url(../img/category_acc.webp);
+    // background-image: url(../img/category_acc.jpg);
     background-position: center;
     background-color: #504543;
 }
@@ -448,8 +453,8 @@ body {
 
 .feedback {
     background-color: #efefef;
-    background-image: url(../img/feedback_background.png);
-    // margin: 0 auto;
+    background-image: url(../img/feedback_background.webp);
+    // background-image: url(../img/feedback_background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -532,8 +537,6 @@ body {
     background-color: #211616;
     background-position: center;
     min-height: $header_height;
-    // margin-left: auto;
-    // margin-right: auto;
 }
 
 .footer_menu {
@@ -771,7 +774,6 @@ body {
 }
 
 .custom-checkbox:checked + label::before {
-    // border-color: black;
     background-color: $color_pink;
 }
 
@@ -1001,7 +1003,6 @@ body {
         position: relative;
         display: flex;
         width: 652px;
-        // min-height: 306px;
         margin-bottom: 40px;
         background-color: #ffffff;
         box-shadow: 14px 13px 8px 0px rgba(34, 60, 80, 0.11);
@@ -1087,11 +1088,9 @@ body {
         font-weight: 300;
         cursor: pointer;
         transition-duration: 500ms;
-        // transition-property: transform;
     }
 
     &__button:hover {
-        // transform: scale(1.1);
         border: 1px solid $color_pink;
         background-color: $color_pink;
         color: white;
@@ -1104,7 +1103,6 @@ body {
     }
 
     &__form {
-        // background-color: chartreuse;
         width: 360px;
         min-height: 310px;
         h2 {
@@ -1139,11 +1137,9 @@ body {
         margin-top: 24px;
         cursor: pointer;
         transition-duration: 500ms;
-        // transition-property: transform;
     }
 
     &__button-form:hover {
-        // transform: scale(1.2);
         border: 1px solid $color_pink;
         background-color: $color_pink;
         color: white;
@@ -1249,7 +1245,6 @@ body {
         }
         .cart-main__quantity {
             font-size: 10px;
-            // padding: 1px 0px 1px 10px;
             width: 24px;
         }
         .cart-main__button {
@@ -1486,7 +1481,8 @@ body {
 @media (max-width: 900px) {
     .promo_wrap {
         min-height: 368px;
-        background-image: url(../img/romo_wrap_back_mini.png);
+        background-image: url(../img/romo_wrap_back_mini.webp);
+        // background-image: url(../img/romo_wrap_back_mini.png);
         background-position-x: -1px;
     }
     .the_brand {
@@ -1516,26 +1512,31 @@ body {
     }
 
     .category_women {
-        background-image: url(../img/category_women_mini.jpg);
+        background-image: url(../img/category_women_mini.webp);
+        // background-image: url(../img/category_women_mini.jpg);
         background-position: center;
     }
 
     .category_men {
-        background-image: url(../img/category_men_mini.jpg);
+        background-image: url(../img/category_men_mini.webp);
+        // background-image: url(../img/category_men_mini.jpg);
         background-position: center;
     }
 
     .category_kids {
-        background-image: url(../img/category_kids_mini.jpg);
+        background-image: url(../img/category_kids_mini.webp);
+        // background-image: url(../img/category_kids_mini.jpg);
         background-position: center;
     }
 
     .category_acc {
-        background-image: url(../img/category_acc_mini.jpg);
+        background-image: url(../img/category_acc_mini.webp);
+        // background-image: url(../img/category_acc_mini.jpg);
         background-position: center;
     }
     .feedback {
-        background-image: url(../img/feedback_background_mini.png);
+        background-image: url(../img/feedback_background_mini.webp);
+        // background-image: url(../img/feedback_background_mini.png);
     }
     .feedback_wrap {
         flex-direction: column;
@@ -1608,21 +1609,25 @@ body {
         margin-top: 34px;
     }
     .category_women {
-        background-image: url(../img/category_women.jpg);
+        background-image: url(../img/category_women.webp);
+        // background-image: url(../img/category_women.jpg);
         height: 247px;
     }
     .category_men {
-        background-image: url(../img/category_men.jpg);
+        background-image: url(../img/category_men.webp);
+        // background-image: url(../img/category_men.jpg);
         height: 247px;
         margin-top: 32px;
         margin-bottom: 32px;
     }
     .category_kids {
-        background-image: url(../img/category_kids.jpg);
+        background-image: url(../img/category_kids.webp);
+        // background-image: url(../img/category_kids.jpg);
         height: 247px;
     }
     .category_acc {
-        background-image: url(../img/category_acc.jpg);
+        background-image: url(../img/category_acc.webp);
+        // background-image: url(../img/category_acc.jpg);
         margin-top: 32px;
     }
     .filter_1_none {

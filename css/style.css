@@ -277,7 +277,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-image: url(../img/promo_wrap_back.png);
+  background-image: url(../img/promo_wrap_back.webp);
   background-repeat: no-repeat;
   background-position-x: -226px;
   background-position-y: 100%;
@@ -341,25 +341,25 @@ body {
 }
 
 .category_women {
-  background-image: url(../img/category_women.jpg);
+  background-image: url(../img/category_women.webp);
   background-position: center;
   background-color: #504543;
 }
 
 .category_men {
-  background-image: url(../img/category_men.jpg);
+  background-image: url(../img/category_men.webp);
   background-position: center;
   background-color: #504543;
 }
 
 .category_kids {
-  background-image: url(../img/category_kids.jpg);
+  background-image: url(../img/category_kids.webp);
   background-position: center;
   background-color: #504543;
 }
 
 .category_acc {
-  background-image: url(../img/category_acc.jpg);
+  background-image: url(../img/category_acc.webp);
   background-position: center;
   background-color: #504543;
 }
@@ -582,7 +582,7 @@ body {
 
 .feedback {
   background-color: #efefef;
-  background-image: url(../img/feedback_background.png);
+  background-image: url(../img/feedback_background.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1853,7 +1853,7 @@ body {
 @media (max-width: 900px) {
   .promo_wrap {
     min-height: 368px;
-    background-image: url(../img/romo_wrap_back_mini.png);
+    background-image: url(../img/romo_wrap_back_mini.webp);
     background-position-x: -1px;
   }
   .the_brand {
@@ -1880,23 +1880,23 @@ body {
     height: 116px;
   }
   .category_women {
-    background-image: url(../img/category_women_mini.jpg);
+    background-image: url(../img/category_women_mini.webp);
     background-position: center;
   }
   .category_men {
-    background-image: url(../img/category_men_mini.jpg);
+    background-image: url(../img/category_men_mini.webp);
     background-position: center;
   }
   .category_kids {
-    background-image: url(../img/category_kids_mini.jpg);
+    background-image: url(../img/category_kids_mini.webp);
     background-position: center;
   }
   .category_acc {
-    background-image: url(../img/category_acc_mini.jpg);
+    background-image: url(../img/category_acc_mini.webp);
     background-position: center;
   }
   .feedback {
-    background-image: url(../img/feedback_background_mini.png);
+    background-image: url(../img/feedback_background_mini.webp);
   }
   .feedback_wrap {
     -webkit-box-orient: vertical;
@@ -1980,21 +1980,21 @@ body {
     margin-top: 34px;
   }
   .category_women {
-    background-image: url(../img/category_women.jpg);
+    background-image: url(../img/category_women.webp);
     height: 247px;
   }
   .category_men {
-    background-image: url(../img/category_men.jpg);
+    background-image: url(../img/category_men.webp);
     height: 247px;
     margin-top: 32px;
     margin-bottom: 32px;
   }
   .category_kids {
-    background-image: url(../img/category_kids.jpg);
+    background-image: url(../img/category_kids.webp);
     height: 247px;
   }
   .category_acc {
-    background-image: url(../img/category_acc.jpg);
+    background-image: url(../img/category_acc.webp);
     margin-top: 32px;
   }
   .filter_1_none {
