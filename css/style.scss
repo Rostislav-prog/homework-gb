@@ -6,6 +6,12 @@
 
 @import "blocks/mixins";
 
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
 .header {
     background-color: #222222;
     background-position: center;
@@ -39,6 +45,7 @@
         transform-origin: right top;
         transition-duration: 500ms;
         transform: scalex(0);
+        z-index: 700;
     }
 
     #toggle {
@@ -205,45 +212,6 @@
     font-size: 32px;
 }
 
-@media (max-width: 900px) {
-    .promo_wrap {
-        min-height: 368px;
-        background-image: url(../img/romo_wrap_back_mini.png);
-        background-position-x: -1px;
-    }
-    .the_brand {
-        font-size: 44px;
-    }
-    .of_luxerious {
-        font-size: 24px;
-    }
-    .fashion {
-        color: $color_pink;
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 700px) {
-    .promo_wrap {
-        background-image: none;
-        justify-content: center;
-        min-height: 363px;
-    }
-    .promo_heading {
-        margin-right: 0;
-    }
-    .the_brand {
-        font-size: 44px;
-    }
-    .of_luxerious {
-        font-size: 24px;
-    }
-    .fashion {
-        color: $color_pink;
-        font-size: 24px;
-    }
-}
-
 .categories {
     display: flex;
     flex-wrap: wrap;
@@ -306,78 +274,6 @@
 
 .category_link {
     text-decoration: none;
-}
-
-@media (max-width: 1150px) {
-    .categories {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .categories {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .category_item {
-        height: 167px;
-    }
-
-    .category_acc {
-        height: 116px;
-    }
-
-    .category_women {
-        background-image: url(../img/category_women_mini.jpg);
-        background-position: center;
-    }
-
-    .category_men {
-        background-image: url(../img/category_men_mini.jpg);
-        background-position: center;
-    }
-
-    .category_kids {
-        background-image: url(../img/category_kids_mini.jpg);
-        background-position: center;
-    }
-
-    .category_acc {
-        background-image: url(../img/category_acc_mini.jpg);
-        background-position: center;
-    }
-}
-
-@media (max-width: 425px) {
-    .category_item {
-        width: 100%;
-    }
-    .categories {
-        flex-direction: column;
-        margin-top: 34px;
-    }
-    .category_women {
-        background-image: url(../img/category_women.jpg);
-        height: 247px;
-    }
-    .category_men {
-        background-image: url(../img/category_men.jpg);
-        height: 247px;
-        margin-top: 32px;
-        margin-bottom: 32px;
-    }
-    .category_kids {
-        background-image: url(../img/category_kids.jpg);
-        height: 247px;
-    }
-    .category_acc {
-        background-image: url(../img/category_acc.jpg);
-        margin-top: 32px;
-    }
 }
 
 .products {
@@ -514,22 +410,6 @@
     background-color: $color_pink;
 }
 
-@media (max-width: 1150px) {
-    .product_none {
-        display: none;
-    }
-    .products_wrap {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .product {
-        margin-top: 17px;
-    }
-}
-
 .advantages {
     background-color: #222224;
 }
@@ -566,25 +446,13 @@
     margin-top: 16px;
 }
 
-@media (max-width: 1150px) {
-    .advantages_wrap {
-        flex-direction: column;
-        padding-top: 0;
-        padding-bottom: 64px;
-    }
-}
-
-@media (max-width: 768px) {
-    .advantages_wrap {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
 .feedback {
+    background-color: #efefef;
     background-image: url(../img/feedback_background.png);
-    max-width: 1440px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .feedback_wrap {
@@ -660,31 +528,12 @@
     color: $color_pink;
 }
 
-@media (max-width: 768px) {
-    .feedback {
-        background-image: url(../img/feedback_background_mini.png);
-    }
-    .feedback_wrap {
-        flex-direction: column;
-    }
-    .subscribe {
-        margin-top: 88px;
-    }
-}
-
-@media (max-width: 768px) {
-    .feedback_wrap {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
 .footer {
     background-color: #211616;
     background-position: center;
     min-height: $header_height;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 .footer_menu {
@@ -736,26 +585,9 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .footer_menu {
-        padding: 0 24px;
-    }
-}
-
-@media (max-width: 425px) {
-    .footer_menu {
-        flex-direction: column-reverse;
-        padding: 9px 0;
-    }
-    .footer_social {
-        margin-top: 39px;
-        margin-bottom: 40px;
-    }
-}
-
 .promo-catalog {
     background-color: #f8f3f4;
-    min-height: 148px;
+    height: 148px;
 
     .promo-catalog__wrap {
         @include wrap;
@@ -951,34 +783,6 @@
     margin-left: -5px;
 }
 
-@media (max-width: 1024px) {
-    .filter_2 {
-        margin-right: 0;
-    }
-    .products_filter {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
-@media (max-width: 425px) {
-    .filter_1_none {
-        display: none;
-    }
-
-    .filter_1 summary svg {
-        margin-left: -5px;
-        transform: scale(3);
-    }
-
-    .filter_1[open] summary svg {
-        margin-left: 15px;
-        transform: scale(3);
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-}
-
 .pagination {
     display: flex;
     justify-content: center;
@@ -1037,17 +841,6 @@
 .product_image {
     overflow: hidden;
 }
-
-// .transition {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     position: absolute;
-//     width: 98vw;
-//     height: 100%;
-//     z-index: 100;
-//     top: 0px;
-// }
 
 .transition_button_left {
     border: none;
@@ -1190,20 +983,6 @@
     }
 }
 
-@media (max-width: 1120px) {
-    .product_informaion {
-        top: 0px;
-    }
-}
-
-@media (max-width: 500px) {
-    .filter_3 {
-        a {
-            font-size: 10px;
-        }
-    }
-}
-
 .promo-catalog_cart {
     visibility: hidden;
 }
@@ -1308,11 +1087,14 @@
         font-weight: 300;
         cursor: pointer;
         transition-duration: 500ms;
-        transition-property: transform;
+        // transition-property: transform;
     }
 
     &__button:hover {
-        transform: scale(1.1);
+        // transform: scale(1.1);
+        border: 1px solid $color_pink;
+        background-color: $color_pink;
+        color: white;
     }
 
     &__form-checkout {
@@ -1357,11 +1139,14 @@
         margin-top: 24px;
         cursor: pointer;
         transition-duration: 500ms;
-        transition-property: transform;
+        // transition-property: transform;
     }
 
     &__button-form:hover {
-        transform: scale(1.2);
+        // transform: scale(1.2);
+        border: 1px solid $color_pink;
+        background-color: $color_pink;
+        color: white;
     }
 
     &__checkout {
@@ -1464,7 +1249,8 @@
         }
         .cart-main__quantity {
             font-size: 10px;
-            padding: 1px 0px 1px 10px;
+            // padding: 1px 0px 1px 10px;
+            width: 24px;
         }
         .cart-main__button {
             width: 175px;
@@ -1516,6 +1302,7 @@
         background-color: #ffffff;
         border: 1px solid #a4a4a4;
         padding-left: 16px;
+        padding-right: 16px;
         margin-top: 20px;
         cursor: pointer;
     }
@@ -1637,6 +1424,49 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .footer_menu {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .categories {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .product_none {
+        display: none;
+    }
+    .products_wrap {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .advantages_wrap {
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 64px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .product_informaion {
+        top: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .filter_2 {
+        margin-right: 0;
+    }
+    .products_filter {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
 @media (max-width: 1000px) {
     .registration-main__loyalty {
         h2,
@@ -1653,7 +1483,77 @@
     }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 900px) {
+    .promo_wrap {
+        min-height: 368px;
+        background-image: url(../img/romo_wrap_back_mini.png);
+        background-position-x: -1px;
+    }
+    .the_brand {
+        font-size: 44px;
+    }
+    .of_luxerious {
+        font-size: 24px;
+    }
+    .fashion {
+        color: $color_pink;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categories {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .category_item {
+        height: 167px;
+    }
+
+    .category_acc {
+        height: 116px;
+    }
+
+    .category_women {
+        background-image: url(../img/category_women_mini.jpg);
+        background-position: center;
+    }
+
+    .category_men {
+        background-image: url(../img/category_men_mini.jpg);
+        background-position: center;
+    }
+
+    .category_kids {
+        background-image: url(../img/category_kids_mini.jpg);
+        background-position: center;
+    }
+
+    .category_acc {
+        background-image: url(../img/category_acc_mini.jpg);
+        background-position: center;
+    }
+    .feedback {
+        background-image: url(../img/feedback_background_mini.png);
+    }
+    .feedback_wrap {
+        flex-direction: column;
+    }
+    .subscribe {
+        margin-top: 88px;
+    }
+    .feedback_wrap {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .product {
+        margin-top: 17px;
+    }
+    .advantages_wrap {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .registration-main {
         flex-direction: column;
         align-items: center;
@@ -1667,5 +1567,87 @@
         margin-left: 0;
         margin-right: 0;
         margin-top: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .promo_wrap {
+        background-image: none;
+        justify-content: center;
+        min-height: 363px;
+    }
+    .promo_heading {
+        margin-right: 0;
+    }
+    .the_brand {
+        font-size: 44px;
+    }
+    .of_luxerious {
+        font-size: 24px;
+    }
+    .fashion {
+        color: $color_pink;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .filter_3 {
+        a {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .category_item {
+        width: 100%;
+    }
+    .categories {
+        flex-direction: column;
+        margin-top: 34px;
+    }
+    .category_women {
+        background-image: url(../img/category_women.jpg);
+        height: 247px;
+    }
+    .category_men {
+        background-image: url(../img/category_men.jpg);
+        height: 247px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .category_kids {
+        background-image: url(../img/category_kids.jpg);
+        height: 247px;
+    }
+    .category_acc {
+        background-image: url(../img/category_acc.jpg);
+        margin-top: 32px;
+    }
+    .filter_1_none {
+        display: none;
+    }
+
+    .filter_1 summary svg {
+        margin-left: -5px;
+        transform: scale(3);
+    }
+
+    .filter_1[open] summary svg {
+        margin-left: 15px;
+        transform: scale(3);
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        padding: 9px 0;
+    }
+    .footer_menu {
+        flex-direction: column-reverse;
+    }
+    .footer_social {
+        margin-top: 39px;
+        margin-bottom: 40px;
     }
 }
