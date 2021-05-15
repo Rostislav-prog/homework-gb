@@ -938,6 +938,7 @@ body {
   background: #ffffff;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 1;
 }
 
 .filter_2_content_li {
@@ -1069,6 +1070,7 @@ body {
 
 .product_image {
   overflow: hidden;
+  width: 100%;
 }
 
 .transition_button_left {
@@ -1138,6 +1140,8 @@ body {
   font-weight: 300;
   font-size: 14px;
   color: #5e5e5e;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .women_collection {
