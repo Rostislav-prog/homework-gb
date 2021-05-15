@@ -6,6 +6,7 @@
 
 @import "blocks/mixins";
 
+// привязка подваза к низу страницы
 body {
     min-height: 100vh;
     display: grid;
